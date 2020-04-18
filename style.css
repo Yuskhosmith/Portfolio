@@ -23,7 +23,7 @@ body{
     margin: 60px 600px;
     padding: 40px;
     border-radius: 20px 20px 20px 20px;
-    box-shadow: grey;
+    box-shadow: 5px 10px #888888;
     text-align: justify;
     font-style: italic;
     font-weight: 700;

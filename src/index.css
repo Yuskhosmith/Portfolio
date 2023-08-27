@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: black;
+  width: 90%;
+  margin: 0 auto;
+  color: white;
+}
+
+.text-style-primary{
+  @apply text-lg lg:text-2xl font-semibold;
+}
+
+.text-hero-h1{
+  @apply text-[64px] font-semibold 
+}
+
+.text-hero-tagline{
+  @apply font-medium text-[32px]
+}
+
+.btn {
+  @apply rounded-xl px-[50px] py-7 text-2xl
+}

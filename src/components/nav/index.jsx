@@ -6,7 +6,7 @@ import {BsLinkedin} from "react-icons/bs"
 
 const Nav = () => {
   return (
-    <nav className="py-5 flex justify-between items-center fixed top-0 w-[90%] bg-black">
+    <nav className="py-5 flex justify-between items-center fixed top-0 w-[90%] bg-black z-40">
       <div className="flex gap-4 items-center text-style-primary">
         <div className="max-w-[90px] max-h-[90px]">
           <img

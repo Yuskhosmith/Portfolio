@@ -2,8 +2,8 @@ import React from "react";
 
 const Hero = () => {
   return (
-    <div id="home" className="flex items-center h-screen justify-center ">
-      <div>
+    <div id="home" className="flex flex-col gap-8 lg:gap-0 lg:flex-row items-center h-screen justify-center ">
+      <div className="order-2 lg:order-1">
         <h1 className="text-hero-h1">
           Hi, I am <span className="text-primary">Opoola Yusuf.</span>
         </h1>
@@ -25,8 +25,8 @@ const Hero = () => {
           </a>
         </div>
       </div>
-      <div className="flex-grow flex items-center justify-center">
-        <div className="w-[400px] h-[400px] relative">
+      <div className="lg:flex-grow flex items-center justify-center">
+        <div className="w-[205px] h-[205px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] relative">
           <div className="w-full h-full bg-white opacity-80"></div>
           <div className="w-full h-full absolute bg-white top-4 right-4"></div>
         </div>

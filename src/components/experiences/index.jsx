@@ -20,7 +20,7 @@ const Experiences = () => {
     const activeCompany = data.find((item) => item.company === active);
 
     return(
-        <div id="code" className="min-h-screen flex flex-col justify-center gap-8">
+        <div id="code" className="lyt snap-start min-h-screen flex flex-col justify-center gap-8">
             <h1 className="text-hero-h1">experiences.</h1>
             <div className="flex justify-center gap-20">
                 <div className="flex flex-col">

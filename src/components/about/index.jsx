@@ -86,7 +86,7 @@ const About = () => {
     },
   ];
   return (
-    <div id="about" className="min-h-screen flex flex-col justify-center ">
+    <div id="about" className="lyt snap-start min-h-screen flex flex-col justify-center ">
       <h1 className="text-primary text-hero-h1">about.</h1>
       <div className="flex flex-col gap-4">
         <p className="text-2xl">

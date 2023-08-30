@@ -26,7 +26,7 @@ const Code = () => {
   return (
     <div
       id="code"
-      className="min-h-screen flex flex-col justify-center "
+      className="lyt snap-start min-h-screen flex flex-col justify-center "
     >
       <h1 className="text-primary text-hero-h1 mb-2.5">&lt;/code&gt;</h1>
       <div className="flex flex-col gap-4">

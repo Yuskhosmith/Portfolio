@@ -1,4 +1,6 @@
-import React from "react";
+import React, {useRef, useEffect} from "react";
+import gsap from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import Nav from "./components/nav";
 import Hero from "./components/hero";
 import About from "./components/about";
@@ -7,8 +9,7 @@ import Experiences from "./components/experiences";
 
 function App() {
   return (
-    // <div className="snap-x snap-mandatory">
-    <div>
+    <div className="overflow-y-scroll h-screen snap-y snap-mandatory">
       <Nav/>
       <Hero/>
       <About/>

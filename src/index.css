@@ -1,36 +1,20 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-html{
-  scroll-behavior: smooth;
-}
+
 
 body {
-  font-family: "Poppins", sans-serif;
-  background-color: black;
-  overflow: hidden;
-  color: white;
+  font-family: "Inter", sans-serif;
+  background-color: #020303;
 }
 
-.lyt{
-  @apply w-[90%] mx-auto;
+.card-base {
+  @apply p-4 border border-accent rounded-md flex flex-col gap-2 justify-center bg-secondary hover:drop-shadow-ds
 }
 
-.text-style-primary{
-  @apply text-lg lg:text-2xl font-semibold;
-}
-
-.text-hero-h1{
-  @apply text-[32px] sm:text-5xl md:text-[64px] font-semibold mb-2.5 md:mb-0
-}
-
-.text-hero-tagline{
-  @apply font-medium sm:text-2xl md:text-[32px]
-}
-
-.btn {
-  @apply rounded-xl px-5 py-3 sm:px-8 sm:py-5 sm:text-lg md:px-10 md:py-6 md:text-xl lg:px-[50px] lg:py-7 lg:text-2xl
+.section {
+  @apply mt-[96px]
 }

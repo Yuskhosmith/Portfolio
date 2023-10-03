@@ -1,72 +1,39 @@
-import React, { useState } from "react";
-import Logo from "../../assets/logo.svg";
-import { FaGithub, FaTwitter } from "react-icons/fa6";
-import { BsLinkedin } from "react-icons/bs";
-import Cancel from "../../assets/icons/cancel";
-import Menu from "../../assets/icons/menu";
+import React from "react";
+import { NavLink } from "react-router-dom";
 
 const Nav = () => {
-  const [openSideNav, setOpenSideNav] = useState(false);
+  const links = [
+    {
+      name: "Home",
+      link: "/",
+    },
+    {
+      name: "Work",
+      link: "/work",
+    },
+    {
+      name: "About",
+      link: "/about",
+    },
+    {
+      name: "Contact",
+      link: "/contact",
+    },
+  ];
   return (
-    <>
-      {openSideNav ? (
-        <nav className="fixed top-0 left-0 w-full h-full bg-bg flex justify-center items-center z-50">
-          <div
-            className="absolute text-sky-blue top-10 left-10"
-            onClick={() => setOpenSideNav(false)}
-          >
-            <Cancel />
-          </div>
-          <div className="flex flex-col gap-14 items-center"></div>
-        </nav>
-      ) : (
-        <nav className="fixed top-0 bg-black z-40 w-full">
-          <div className="lyt py-5 flex justify-between items-center">
-            <div className="flex gap-4 items-center text-style-primary">
-              <div className="max-w-[90px] max-h-[90px]">
-                <img
-                  src={Logo}
-                  alt="Logo"
-                />
-              </div>
-              <h2 className="text-primary">Opoola Yusuf</h2>
-            </div>
-            <div className="text-primary hidden md:block text-style-primary">
-              <ul className="text-style-primary flex md:gap-10 lg:gap-20">
-                <li>
-                  <a href="#home">Home</a>
-                </li>
-                <li>
-                  <a href="#code">&lt;/code&gt;</a>
-                </li>
-                <li>
-                  <a href="#about">About</a>
-                </li>
-              </ul>
-            </div>
-            <div className="hidden md:flex text-style-primary gap-4">
-              <div className="text-white px-4">
-                <FaGithub />
-              </div>
-              <div className="text-[#1D9BF0] px-4">
-                <FaTwitter />
-              </div>
-              <div className="text-[#0A66C2] px-4 ">
-                <div className="bg-white rounded">
-                  <BsLinkedin />
-                </div>
-              </div>
-            </div>
-            <div
-              className="md:hidden text-sky-blue"
-              onClick={() => setOpenSideNav(true)}
-            >
-              <Menu />
-            </div>
-          </div>
-        </nav>
-      )}
-    </>
+    <div className="bg-secondary rounded-full m-auto my-4 p-1 flex text-text justify-center w-fit">
+      {links.map((link) => (
+        <NavLink
+          to={link.link}
+          key={link.link}
+          className={({ isActive }) =>
+            isActive ? "bg-background rounded-full px-5 py-3 font-medium" : "px-5 py-3 font-medium"
+          }
+        >
+          {link.name}
+        </NavLink>
+      ))}
+    </div>
   );
 };
 

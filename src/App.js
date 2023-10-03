@@ -1,20 +1,20 @@
-import React, {useRef, useEffect} from "react";
-import gsap from "gsap";
-import { ScrollTrigger } from "gsap/ScrollTrigger";
-import Nav from "./components/nav";
-import Hero from "./components/hero";
-import About from "./components/about";
-import Code from "./components/code";
-import Experiences from "./components/experiences";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Home from "./pages/home";
+import Work from "./pages/work";
+import PageLayout from "./components/page-layout";
 
 function App() {
   return (
-    <div className="overflow-y-scroll h-screen snap-y snap-mandatory">
-      <Nav/>
-      <Hero/>
-      <About/>
-      <Code/>
-      <Experiences/>
+    <div className="">
+      <Router>
+        <Routes>
+          <Route exact path="/" element={<PageLayout />}>
+            <Route index element={<Home />}/>
+            <Route path="work" element={<Work />}/>
+          </Route>
+        </Routes>
+      </Router>
     </div>
   );
 }

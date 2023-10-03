@@ -6,16 +6,22 @@ import PageLayout from "./components/page-layout";
 
 function App() {
   return (
-    <div className="">
-      <Router>
-        <Routes>
-          <Route exact path="/" element={<PageLayout />}>
-            <Route index element={<Home />}/>
-            <Route path="work" element={<Work />}/>
-          </Route>
-        </Routes>
-      </Router>
-    </div>
+    <Routes>
+      <Route
+        exact
+        path="/"
+        element={<PageLayout />}
+      >
+        <Route
+          index
+          element={<Home />}
+        />
+        <Route
+          path="work"
+          element={<Work />}
+        />
+      </Route>
+    </Routes>
   );
 }
 

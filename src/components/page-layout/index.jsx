@@ -6,7 +6,7 @@ const PageLayout = () => {
   return (
     <>
       <Nav />
-      <main className="mx-auto max-w-[1024px]">
+      <main className="mx-auto max-w-[1024px] w-11/12">
         <Outlet />
       </main>
     </>

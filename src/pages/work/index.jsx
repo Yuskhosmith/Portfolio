@@ -3,7 +3,9 @@ import React from "react"
 const Work = () => {
 
     return(
-        <div>Work WORK</div>
+        <div className="flex h-[600px] items-center">
+            <h1 className="text-text class font-semibold text-center text-4xl md:text-6xl leading-normal">Under Contruction, check back in a week</h1>
+        </div>
     );
 };
 

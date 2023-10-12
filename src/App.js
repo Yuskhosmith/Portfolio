@@ -20,6 +20,14 @@ function App() {
           path="work"
           element={<Work />}
         />
+        <Route
+          path="about"
+          element={<Work />}
+        />
+        <Route
+          path="contact"
+          element={<Work />}
+        />
       </Route>
     </Routes>
   );

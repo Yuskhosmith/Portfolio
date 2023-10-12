@@ -21,7 +21,7 @@ const Nav = () => {
     },
   ];
   return (
-    <div className="bg-secondary rounded-full m-auto my-4 p-1 flex text-text justify-center w-fit">
+    <nav className="bg-secondary rounded-full m-auto my-4 p-1 flex text-text justify-center w-fit text-xs md:text-sm">
       {links.map((link) => (
         <NavLink
           to={link.link}
@@ -33,7 +33,7 @@ const Nav = () => {
           {link.name}
         </NavLink>
       ))}
-    </div>
+    </nav>
   );
 };
 

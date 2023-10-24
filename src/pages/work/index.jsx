@@ -3,9 +3,13 @@ import React from "react"
 const Work = () => {
 
     return(
-        <div className="flex h-[600px] items-center">
-            <h1 className="text-text class font-semibold text-center text-4xl md:text-6xl leading-normal">Under Contruction, check back in a week</h1>
-        </div>
+        <>
+        <header className="space-y-2 my-12">
+            <h1 className="text-text class font-semibold text-center text-4xl md:text-6xl md:text-left leading-normal">Work</h1>
+            <p className="text-accent">Check out the projects I worked on!</p>
+        </header>
+        <p className="text-accent">Coming soon 😭, I swear I have worked on plenty projects</p>
+        </>
     );
 };
 

@@ -14,6 +14,9 @@ module.exports = {
       },
       dropShadow: {
         ds: '0px 8px 8px rgba(125, 126, 130, 0.25)',
+      },
+      margin: {
+        42: '10.5rem'
       }
     },
   },

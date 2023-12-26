@@ -1,22 +1,22 @@
 import React from "react";
 
-const Link = () => {
+const Email = () => {
   return (
     <svg
       xmlns="http://www.w3.org/2000/svg"
       fill="none"
       viewBox="0 0 24 24"
-      stroke="white"
-      className="h-4 w-4"
+      stroke="currentColor"
+      className="h-8 w-8 text-white"
     >
       <path
         strokeLinecap="round"
         strokeLinejoin="round"
         strokeWidth="2"
-        d="M13.828 10.172a4 4 0 00-5.656 0l-4 4a4 4 0 105.656 5.656l1.102-1.101m-.758-4.899a4 4 0 005.656 0l4-4a4 4 0 00-5.656-5.656l-1.1 1.1"
-      />
+        d="M16 12a4 4 0 10-8 0 4 4 0 008 0zm0 0v1.5a2.5 2.5 0 005 0V12a9 9 0 10-9 9m4.5-1.206a8.959 8.959 0 01-4.5 1.207"
+      ></path>
     </svg>
   );
 };
 
-export default Link;
+export default Email;

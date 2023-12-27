@@ -7,7 +7,7 @@ const About = () => {
         <h1 className="text-text font-semibold text-4xl md:text-6xl leading-normal">
           About.
         </h1>
-        <p className="flex justify-between text-accent">
+        <p className="flex flex-col md:flex-row md:justify-between text-accent">
           <span>Verily I shall find a suitable tagline.</span>
           <span>Last updated: 27-12-23</span>
         </p>

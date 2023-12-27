@@ -60,7 +60,7 @@ const Work = () => {
     <>
       <header className="space-y-2 my-12">
         <h1 className="text-text font-semibold text-4xl md:text-6xl leading-normal">
-          Work
+          Work.
         </h1>
         <p className="text-accent">Check out the projects I worked on!</p>
       </header>

@@ -43,7 +43,7 @@ const Contact = () => {
     <>
       <header className="space-y-2 my-12">
         <h1 className="text-text font-semibold text-4xl md:text-6xl leading-normal">
-          Contact
+          Contact.
         </h1>
         <p className="text-accent">If you have any questions, feel free to contact me.</p>
       </header>

@@ -4,14 +4,19 @@ import Card from "../card";
 const Experience = () => {
   const ex = [
     {
+      title: "Software Engineer",
+      company: "Eulav",
+      date: "Feb, 2024 - Present",
+    },
+    {
       title: "Full Stack Web and Python Instructor",
       company: "New Horizons",
-      date: "Jan, 2024 - ",
+      date: "Jan, 2024 - Present",
     },
     {
       title: "Full Stack Engineer",
       company: "Tech Semester",
-      date: "Aug, 2023 - ",
+      date: "Aug, 2023 - Present",
     },
     {
       title: "Engineering Intern",

@@ -16,7 +16,7 @@ const Experience = () => {
     {
       title: "Full Stack Engineer",
       company: "Tech Semester",
-      date: "Aug, 2023 - Present",
+      date: "Aug, 2023 - Apr, 2024",
     },
     {
       title: "Engineering Intern",

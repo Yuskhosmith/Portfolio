@@ -16,6 +16,10 @@ const Technologies = () => {
           src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg",
         },
         {
+          name: "Next.js",
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nextjs/nextjs-original.svg",
+        },
+        {
           name: "React.js",
           src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
         },
@@ -33,7 +37,7 @@ const Technologies = () => {
         },
         {
           name: "Tailwind CSS",
-          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg",
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original.svg",
         },
         {
           name: "Sass",
@@ -79,7 +83,7 @@ const Technologies = () => {
         },
         {
           name: "AWS",
-          src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original.svg",
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/amazonwebservices/amazonwebservices-plain-wordmark.svg",
         },
         {
           name: "Heroku",
@@ -90,6 +94,10 @@ const Technologies = () => {
     {
       name: "os",
       items: [
+        {
+          name: "MacOS",
+          src: "https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/apple/apple-original.svg",
+        },
         {
           name: "Windows",
           src: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/windows8/windows8-original.svg",

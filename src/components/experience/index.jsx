@@ -6,12 +6,12 @@ const Experience = () => {
     {
       title: "Software Engineer",
       company: "Eulav",
-      date: "Feb, 2024 - Present",
+      date: "Feb - Oct, 2024",
     },
     {
       title: "Full Stack Web and Python Instructor",
       company: "New Horizons",
-      date: "Jan, 2024 - Present",
+      date: "Jan - Oct, 2024",
     },
     {
       title: "Full Stack Engineer",

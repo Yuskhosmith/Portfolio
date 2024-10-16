@@ -21,7 +21,10 @@ const Hero = () => {
         <>
         <header className="flex flex-col-reverse my-16 py-10 md:flex-row md:justify-between justify-center items-center">
             <div className="md:w-8/12 space-y-6">
+                <div className="lg:space-y-4">
+                <p className="font-semibold text-center text-lg md:text-xl md:text-left text-white/50">Hi, I am <span className="text-text">Yusuf Opoola</span></p>
                 <h1 className="text-text font-semibold text-center text-4xl md:text-6xl md:text-left leading-normal">Full-stack web developer</h1>
+                </div>
                 <div className="flex items-center justify-center md:justify-start gap-x-3 gap-y-2 flex-wrap">
                     {pills.map((item) => (
                         <Pill key={item.name} {...item}/>

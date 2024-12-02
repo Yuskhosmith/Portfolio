@@ -58,7 +58,7 @@ const Work = () => {
   ];
   return (
     <>
-      <header className="space-y-2 my-12">
+      <header className="space-y-2 mt-28 mb-12">
         <h1 className="text-text font-semibold text-4xl md:text-6xl leading-normal">
           Work.
         </h1>

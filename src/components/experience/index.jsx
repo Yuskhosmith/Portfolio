@@ -32,7 +32,7 @@ const Experience = () => {
     }
   ];
   return (
-    <section className="section grid gap-x-8 gap-y-24 md:grid-cols-2">
+    <section className="section grid gap-x-8 gap-y-24 md:grid-cols-2" id="experience">
       <div>
         <h3 className="text-sm font-medium uppercase text-accent">
           Experience

@@ -13,10 +13,12 @@ const Pages = () => {
         <Card
           title={"Projects"}
           tagline={"Unleasing my creative powers, one project at a time 🎨"}
+          link="/work"
         />
         <Card
           title={"Experience"}
           tagline={"Bringing Ideas to life, pixel by pixel, code by code 💡"}
+          link={{ hash: "experience" }}
         />
       </div>
     </section>

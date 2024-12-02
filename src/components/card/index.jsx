@@ -1,8 +1,24 @@
-import React from "react";
+import React, {useEffect} from "react";
+import { Link, useLocation } from "react-router-dom";
 
-const Card = ({ title, tagline, date }) => {
-  return (
-    <div className="card-base">
+const Card = ({ title, tagline, date, link }) => {
+  const location = useLocation();
+  useEffect(() => {
+    if (link?.hash) {
+      const target = document.getElementById(link.hash);
+      if (target) {
+        const yOffset = -100;
+        const yPosition = target.getBoundingClientRect().top + window.scrollY + yOffset;
+        window.scrollTo({
+          top: yPosition,
+          behavior: "smooth",
+        });
+        // target.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+  }, [location]);
+  const content = (
+    <>
       {date ? (
         <div className="flex space-x-2 items-center justify-between">
           <h1 className="text-text">{title || "Project"}</h1>
@@ -15,8 +31,17 @@ const Card = ({ title, tagline, date }) => {
         {tagline ||
           "My projects and contributions to the open-source community."}
       </p>
-    </div>
+    </>
   );
+  return (
+    <div className="card-base">
+      {link ? (
+        <Link to={link}>{content}</Link>
+      ) : (
+        content
+      )}
+    </div>
+  )
 };
 
 export default Card;

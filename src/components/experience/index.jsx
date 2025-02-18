@@ -3,25 +3,35 @@ import Card from "../card";
 
 const Experience = () => {
   const ex = [
+    // {
+    //   title: "Software Engineer",
+    //   company: "SparkXplorer",
+    //   date: "Jan, 2025 - Present",
+    // },
+    {
+      title: "Software Engineer",
+      company: "Talnts App",
+      date: "Oct, 2024 - Present",
+    },
     {
       title: "Software Engineer",
       company: "Eulav",
-      date: "Feb - Oct, 2024",
+      date: "Feb, 2024 - Oct, 2024",
     },
     {
       title: "Full Stack Web and Python Instructor",
       company: "New Horizons",
-      date: "Jan - Oct, 2024",
+      date: "Jan, 2024 - Oct, 2024",
     },
     {
       title: "Full Stack Engineer",
-      company: "Tech Semester",
+      company: "Talnts App",
       date: "Aug, 2023 - Apr, 2024",
     },
     {
       title: "Engineering Intern",
       company: "Chronicles SDC",
-      date: "Jan - Aug, 2022",
+      date: "Jan, 2022 - Aug, 2022",
     },
   ];
   const ed = [
